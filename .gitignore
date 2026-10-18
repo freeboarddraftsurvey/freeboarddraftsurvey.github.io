@@ -1,0 +1,8 @@
+*.keystore
+*.jks
+signing-key-info.txt
+*.zip
+*.aab
+*.apk
+*.fbbak
+*.fbs
