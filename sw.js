@@ -17,6 +17,7 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
+  if (req.headers.has("range") || /\.(mp4|webm)$/.test(new URL(req.url).pathname)) return; // videos stream directly
   const url = new URL(req.url);
   const ours = url.origin === self.location.origin;
   if (!ours && !EXTRA_HOSTS.includes(url.hostname)) return; // YouTube, mail links etc. go straight to the network
