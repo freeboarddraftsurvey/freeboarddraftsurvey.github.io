@@ -149,6 +149,29 @@ main{position:relative;z-index:2}
 @media (max-width:820px){.toolsin{grid-template-columns:1fr}.stage{order:-1}.bigphone{width:240px}}
 @media (prefers-reduced-motion:reduce){.bigphone{animation:none}}
 
+
+/* ===== Port to Port ===== */
+.pp{overflow:hidden}
+.ppin{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;max-width:1150px;margin:0 auto 40px}
+.pph{font-family:var(--hfont);font-size:clamp(40px,6vw,72px)!important;line-height:.95!important;text-align:left!important;margin:16px 0 14px!important}
+.pph .g{background:linear-gradient(100deg,#ffbf5a,#f2b33d 45%,#f08c1c 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pp .ticks{margin:6px 0 4px}
+.ppmap svg{width:100%;height:auto;display:block;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.4);border:1px solid var(--line)}
+.pproute{stroke-dasharray:420;stroke-dashoffset:420;animation:ppdraw 3.2s ease-out .4s forwards}
+@keyframes ppdraw{to{stroke-dashoffset:0}}
+.ppsoon{cursor:default;opacity:.85}
+.ppgrid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.ppnote{margin:28px auto 0!important;font-size:14px!important}.ppnote a{color:var(--gold)}
+.apps .app{text-decoration:none;display:block;color:inherit}
+.apps .app:hover{border-color:rgba(242,179,61,.6);transform:translateY(-3px)}
+.apps .appic{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:rgba(242,179,61,.12);border:1px solid rgba(242,179,61,.4);color:var(--gold)}
+.apps .appic svg{width:30px;height:30px;stroke:currentColor}
+.apps .go{display:inline-block;margin-top:6px;color:var(--gold);font-weight:700}
+.apps .soon{opacity:.75}.apps .soon .go{color:var(--mute)}
+.newchip{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:8px 14px 8px 8px;border-radius:999px;background:var(--glass);border:1px solid rgba(242,179,61,.45);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);width:max-content;max-width:100%}
+.newchip b{background:#f2b33d;color:#1a1205;border-radius:999px;padding:3px 9px;font-size:11px;letter-spacing:1px}
+@media (max-width:820px){.ppin{grid-template-columns:1fr;gap:26px}.ppmap{order:-1}.ppgrid{grid-template-columns:1fr 1fr;gap:10px}.ppgrid .card{padding:14px 12px;border-radius:16px}.ppgrid .card h3{font-size:15.5px;margin:8px 0 4px}.ppgrid .card p{font-size:13px;line-height:1.35;margin:0}.ppgrid .card svg{width:24px;height:24px}}
+@media (prefers-reduced-motion:reduce){.pproute{animation:none;stroke-dashoffset:0}}
 /* ===== design themes ===== */
 body.t2{--bg:#e9f1f7;--ink:#0f2234;--ink2:#3c5266;--strong:#0b1a28;--mute:#5b7387;--glass:rgba(255,255,255,.62);--line:rgba(15,34,52,.14);--well:rgba(15,34,52,.06);--blockbg:#eef4f9;--footbg:#dfe9f1;--navbg:rgba(240,246,250,.78);--sky:linear-gradient(180deg,#9fd0f2 0%,#cfe6f6 45%,#e9f1f7 100%)}
 body.t2 .panel{box-shadow:0 30px 70px rgba(15,34,52,.18)}body.t2 .card,body.t2 .vid,body.t2 .fl{box-shadow:0 10px 30px rgba(15,34,52,.08)}body.t2 .hero h1{text-shadow:none}body.t2 .bigphone{border-color:#c9d6e2}body.t2 .soc a{background:rgba(255,255,255,.6)}
@@ -199,7 +222,7 @@ body.t5 #bg .shade{background:linear-gradient(180deg,rgba(40,10,30,.55),rgba(40,
 
 <header class="nav" id="nav">
   <a class="brand" href="#top"><svg viewBox="0 0 64 40" aria-hidden="true"><circle cx="32" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="4"/><line x1="6" y1="20" x2="58" y2="20" stroke="currentColor" stroke-width="4"/></svg>Freeboard</a>
-  <nav><a href="#vessel">Vessel</a><a href="#drafts">Drafts</a><a href="#hydro">Hydrostatics</a><a href="#cargo">Cargo</a><a href="#report">Reports</a><a href="#tools">Tools</a><a href="#videos">Videos</a></nav>
+  <nav><a href="#vessel">Vessel</a><a href="#drafts">Drafts</a><a href="#hydro">Hydrostatics</a><a href="#cargo">Cargo</a><a href="#report">Reports</a><a href="#tools">Tools</a><a href="#videos">Videos</a><a href="#porttoport" style="color:var(--gold)">Port to Port</a></nav>
   <div class="soc"><a href="https://www.facebook.com/share/19Yp989pYi/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6Z"/></svg></a><a href="https://www.instagram.com/draftsurvey.freeboard" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm4 3.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Zm0 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM17 5.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg></a><a href="https://www.tiktok.com/@draftsurveyfreeboard" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 3c.4 2.4 2 4 4.4 4.2v3.3c-1.6 0-3.1-.5-4.4-1.4v6.6A5.7 5.7 0 1 1 10.3 10v3.4a2.4 2.4 0 1 0 2.4 2.4V3H16Z"/></svg></a><a href="https://www.youtube.com/@draftsurvey-freeboard" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg></a></div>
 </header>
 <main id="top">
@@ -212,6 +235,7 @@ body.t5 #bg .shade{background:linear-gradient(180deg,rgba(40,10,30,.55),rgba(40,
       <a class="btn glass" href="/app.html"><span class="sh"></span>⚓ Open the app</a>
       <a class="btn glass" href="#videos"><span class="sh"></span>▶ Watch how it works</a>
     </div>
+    <a class="newchip rv" href="#porttoport"><b>NEW</b>Port to Port · passage planning →</a>
     <div class="cue"><i></i>SCROLL</div>
   </section>
 
@@ -320,6 +344,65 @@ body.t5 #bg .shade{background:linear-gradient(180deg,rgba(40,10,30,.55),rgba(40,
     <div class="grid"><div class="card"><svg viewBox="0 0 24 24"><path d="M6 4v12M6 6h3M6 9h2M6 12h3"/><path d="M3 19c2 0 2-1.5 4.5-1.5S10 19 12 19s2.5-1.5 4.5-1.5S19 19 21 19"/><path d="M14 5h6M14 9h4"/></svg><h3>Draft survey</h3><p>Six drafts to the cargo figure — perpendiculars, deflection, trim and density corrections.</p></div><div class="card"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 13c3 0 3-1.5 5.3-1.5S12 13 14.5 13 17 11.5 20 11.5"/></svg><h3>Ballast from the ship's Excel</h3><p>Import the ship's own workbook — the app finds and maps the tank tables, even protected sheets.</p></div><div class="card"><svg viewBox="0 0 24 24"><path d="M3 14c3 .5 6 2 18-4"/><path d="M5 17h14"/><path d="M17 6l3 4-4 1"/></svg><h3>Trimming by LCG</h3><p>Which two holds, how many tonnes, the final drafts and the drafts after every pour.</p></div><div class="card"><svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M8.5 10l1.3 1.3 2.4-2.6M14 10.2h2.5M8.5 15l1.3 1.3 2.4-2.6M14 15.2h2.5"/></svg><h3>Surveyor mode</h3><p>No ship files? Work straight from the stability booklet — the app interpolates.</p></div><div class="card"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15h6M9 18h3"/></svg><h3>Reports in a minute</h3><p>Logo, signatures and stamps. Print or save as PDF, share with a password.</p></div><div class="card"><svg viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg><h3>Fully offline</h3><p>Works without signal, at sea or in port. No account, no ads — data stays on your phone.</p></div></div>
   </section>
 
+  <section class="block pp" id="porttoport">
+    <div class="ppin">
+      <div class="pptxt rv">
+        <span class="eyebrow">⚓ New from Freeboard</span>
+        <h2 class="pph">Port to Port<br><span class="g">Passage planning</span></h2>
+        <p class="lead">Berth-to-berth route, distance and ETA — with weather, storms, navigational warnings and an ECDIS-ready route file. Built by a ship master for the bridge team.</p>
+        <ul class="ticks">
+          <li>Sea route between thousands of world ports, through canals, straits and TSS</li>
+          <li>Live wind, waves and currents on your route; storms, typhoons and lows with forecast track and semicircles</li>
+          <li>NAVAREA warnings near the route with effective and expiry times</li>
+          <li>Export to ECDIS (RTZ – IEC 61174), GPX, CSV and NMEA · import from ECDIS</li>
+          <li>Professional passage plan PDF: chart, waypoints, noon forecast, load line zones, ECA and checklist</li>
+        </ul>
+        <div class="cta">
+          <a class="btn gold" href="/port-to-port/"><span class="sh"></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1205" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="6" r="2.2"/><path d="M7 17c5-1 3-7 10-10"/></svg><span><small>Free · works on your phone</small>Open Port to Port</span></a>
+          <span class="btn glass ppsoon"><svg width="18" height="20" viewBox="0 0 30 32" aria-hidden="true"><path d="M2 1.5 17.6 16 2 30.5c-.6-.3-1-1-1-1.8V3.3c0-.8.4-1.5 1-1.8Z" fill="currentColor"/><path d="m22.8 11.1 5 2.5c1.6.8 1.6 3 0 3.8l-5 2.5L17.6 16Z" fill="currentColor"/></svg><span><small>Coming soon on</small>Google Play</span></span>
+        </div>
+      </div>
+      <div class="ppmap rv" aria-hidden="true">
+        <svg viewBox="0 0 360 300">
+          <defs><radialGradient id="ppsea" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#123352"/><stop offset="1" stop-color="#06182b"/></radialGradient></defs>
+          <rect width="360" height="300" rx="22" fill="url(#ppsea)"/>
+          <g stroke="rgba(140,200,255,.10)"><path d="M0 75H360M0 150H360M0 225H360M90 0V300M180 0V300M270 0V300"/></g>
+          <path d="M0 40 C40 30 70 60 60 95 C52 125 18 140 0 150Z" fill="#1d3a2c" opacity=".9"/>
+          <path d="M235 300 C240 260 275 240 300 250 C330 262 345 240 360 232 V300Z" fill="#1d3a2c" opacity=".9"/>
+          <path d="M300 0 C305 30 330 45 360 42 V0Z" fill="#1d3a2c" opacity=".9"/>
+          <circle cx="232" cy="118" r="54" fill="rgba(229,57,53,.16)" stroke="rgba(255,99,99,.55)" stroke-dasharray="4 4"/>
+          <path d="M232 118 L300 80" stroke="#fff" stroke-width="2.4" stroke-dasharray="2 6" stroke-linecap="round" fill="none"/>
+          <g transform="translate(232 118)"><circle r="12" fill="#e53935" stroke="#fff" stroke-width="2"/><path d="M-1 -5c4-5 9-4 10 0-3-2-6-1-8 2M1 5c-4 5-9 4-10 0 3 2 6 1 8-2" fill="#fff"/></g>
+          <path class="pproute" d="M48 112 C95 140 120 170 160 190 S240 220 290 262" fill="none" stroke="#f2b33d" stroke-width="4" stroke-linecap="round"/>
+          <g fill="#0b1a28" stroke="#f2b33d" stroke-width="2.5"><circle cx="48" cy="112" r="6"/><circle cx="110" cy="152" r="5"/><circle cx="160" cy="190" r="5"/><circle cx="222" cy="212" r="5"/><circle cx="290" cy="262" r="6"/></g>
+          <g font-family="Barlow,sans-serif" font-size="10.5" font-weight="700" fill="#e8f0f7"><text x="56" y="106">Departure</text><text x="168" y="186">WP 3 · 18 Nov 06Z</text><text x="226" y="254" text-anchor="end">Arrival</text></g>
+          <g transform="translate(18 254)"><rect width="128" height="30" rx="10" fill="rgba(5,13,24,.75)" stroke="rgba(140,200,255,.25)"/><text x="12" y="19" font-family="Barlow,sans-serif" font-size="11.5" font-weight="700" fill="#f2b33d">1,361 nm · ETA 21 Nov</text></g>
+        </svg>
+      </div>
+    </div>
+    <div class="grid ppgrid">
+      <div class="card rv"><svg viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M7 18h5a3 3 0 0 0 0-6h-2a3 3 0 0 1 0-6h7"/></svg><h3>Route &amp; distance</h3><p>Berth to berth with pilot legs, great-circle and rhumb-line legs, TSS and canal passages. Edit any waypoint.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>ETA &amp; ship's time</h3><p>ETA at any waypoint, required speed, clock changes and daylight saving at both ports.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h7"/></svg><h3>Weather on route</h3><p>Wind, waves, swell and currents at the ship's time and position — live animated map.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M13 9c0-3 2-5 6-5c-2 1-3 2-3 5"/><path d="M11 15c0 3-2 5-6 5c2-1 3-2 3-5"/></svg><h3>Storms &amp; Buys Ballot</h3><p>Cyclones and lows with forecast track, cone, dangerous and navigable semicircles and a suggested steer.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4M12 17h.01"/></svg><h3>NAVAREA warnings</h3><p>Warnings near your route plotted on the chart, with effective and expiry date and time.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg><h3>ECDIS ready</h3><p>Export RTZ (IEC 61174), GPX, CSV, NMEA and KML. Import routes back from the ECDIS.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15h6M9 18h3"/></svg><h3>Passage plan PDF</h3><p>Chart, waypoint schedule, noon forecast, storm track against your waypoints, load line, ECA and signatures.</p></div>
+      <div class="card rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 12h18"/></svg><h3>Load line &amp; ECA</h3><p>Load line zones with dates, SECA and MARPOL areas, fuel change-over and cost per route option.</p></div>
+    </div>
+    <p class="sub ppnote rv">Planning aid only — always verify on official ENC or paper charts, sailing directions and current Notices to Mariners. <a href="/privacy-port-to-port.html">Privacy policy</a></p>
+  </section>
+
+  <section class="block ppmore" id="moreapps">
+    <h2 class="rv">Freeboard apps</h2>
+    <p class="sub rv">Tools for ship officers and surveyors, made by a ship master.</p>
+    <div class="grid apps">
+      <a class="card app rv" href="/app.html"><span class="appic"><svg viewBox="0 0 64 40"><circle cx="32" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="4"/><line x1="6" y1="20" x2="58" y2="20" stroke="currentColor" stroke-width="4"/></svg></span><h3>Freeboard – Draft Survey</h3><p>Draft survey, ballast, trimming by LCG and reports. Fully offline.</p><b class="go">Open app →</b></a>
+      <a class="card app rv" href="/port-to-port/"><span class="appic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="6" r="2.2"/><path d="M7 17c5-1 3-7 10-10"/></svg></span><h3>Port to Port</h3><p>Passage planning, ETA, weather, storms, NAVAREA and ECDIS route files.</p><b class="go">Open app →</b></a>
+      <div class="card app soon rv"><span class="appic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><h3>More coming</h3><p>New tools for the bridge and the cargo office are on the way. Follow us to hear first.</p><b class="go">Coming soon</b></div>
+    </div>
+  </section>
+
   <section class="block" id="videos">
     <h2 class="rv">How-to videos</h2>
     <p class="sub rv">Six short videos — about a minute and a half each.</p>
@@ -341,7 +424,7 @@ body.t5 #bg .shade{background:linear-gradient(180deg,rgba(40,10,30,.55),rgba(40,
   </section>
 </main>
 <footer class="foot">
-  <div class="row"><a href="/privacy.html">Privacy policy</a><a href="/app.html">Open the app</a><a href="mailto:freeboard.draftsurvey@gmail.com">Contact</a></div>
+  <div class="row"><a href="/privacy.html">Privacy policy</a><a href="/app.html">Open the app</a><a href="/port-to-port/">Port to Port</a><a href="/privacy-port-to-port.html">Port to Port privacy</a><a href="mailto:freeboard.draftsurvey@gmail.com">Contact</a></div>
   <div class="soc" style="justify-content:center;margin:6px 0 10px"><a href="https://www.facebook.com/share/19Yp989pYi/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6Z"/></svg></a><a href="https://www.instagram.com/draftsurvey.freeboard" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm4 3.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Zm0 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM17 5.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg></a><a href="https://www.tiktok.com/@draftsurveyfreeboard" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 3c.4 2.4 2 4 4.4 4.2v3.3c-1.6 0-3.1-.5-4.4-1.4v6.6A5.7 5.7 0 1 1 10.3 10v3.4a2.4 2.4 0 1 0 2.4 2.4V3H16Z"/></svg></a><a href="https://www.youtube.com/@draftsurvey-freeboard" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg></a></div>
   <small>© 2026 Capt. Ramil Apio. All rights reserved. Freeboard™ and its logo may not be copied or reused without written permission. Freeboard is a calculation aid — always check results against the ship's approved documents.</small>
 </footer>
