@@ -1,6 +1,6 @@
 # Freeboard Maritime Apps — reply guide (auto-replies on YouTube, Facebook Page, Instagram)
 
-Approved by Capt. Ramil Apio (owner) on 2026-11-21: Claude checks every 2 hours, 12x/day (even hours, Asia/Manila) and replies. Changed from 3x/day on 2026-11-21 at his request.
+Approved by Capt. Ramil Apio (owner) on 2026-11-21: Claude checks EVERY HOUR, 24x/day (Asia/Manila) and replies. He chose this instead of Meta Business AI (2026-11-21).
 
 ## Accounts (ONLY these)
 - Facebook Page "Freeboard Maritime Apps" id 1404018342791181 (never 8 Hostel or his other Pages)
