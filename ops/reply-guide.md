@@ -1,6 +1,6 @@
 # Freeboard Maritime Apps — reply guide (auto-replies on YouTube, Facebook Page, Instagram)
 
-Approved by Capt. Ramil Apio (owner) on 2026-11-21: Claude checks 3x/day (09:00, 14:00, 21:00 Asia/Manila) and replies.
+Approved by Capt. Ramil Apio (owner) on 2026-11-21: Claude checks every 2 hours, 12x/day (even hours, Asia/Manila) and replies. Changed from 3x/day on 2026-11-21 at his request.
 
 ## Accounts (ONLY these)
 - Facebook Page "Freeboard Maritime Apps" id 1404018342791181 (never 8 Hostel or his other Pages)
