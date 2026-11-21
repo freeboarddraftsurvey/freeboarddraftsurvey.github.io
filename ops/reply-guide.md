@@ -7,6 +7,7 @@ Approved by Capt. Ramil Apio (owner) on 2026-11-21: Claude checks EVERY HOUR, 24
 - Instagram @draftsurvey.freeboard
 - YouTube channel UCaE4FCMKq5oDWoX0nb63UiA
 - Composio session "next"
+- 8 Hostel accounts are ALSO connected in Composio. ALWAYS pass the account field: Facebook "Freeboard page", Instagram "Freeboard IG", YouTube "apioramil Freeboard". Never use the 8Hostel accounts from Freeboard tasks.
 
 ## What to reply to
 - Questions about the apps (how to use, features, download, price, offline, devices, bugs) → answer.
