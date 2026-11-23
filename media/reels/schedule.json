@@ -7,8 +7,13 @@
   "file": "media/reels/PortToPort_Reel_Tip01.mp4",
   "raw": "https://raw.githubusercontent.com/freeboarddraftsurvey/freeboarddraftsurvey.github.io/main/media/reels/PortToPort_Reel_Tip01.mp4",
   "caption": "🧭 Port to Port | Tip 1: Plan your first route\n\nFree passage planning app on your phone, made by a ship master ⚓\nFull tutorial 1 on our YouTube · App: freeboarddraftsurvey.github.io/porttoport.html\n\n#seafarer #maritime #shipmaster #pinoyseaman #passageplanning #routeplanning #freeboard",
-  "posted": false,
-  "app": "Port to Port"
+  "posted": true,
+  "app": "Port to Port",
+  "links": {
+   "youtube": "https://youtube.com/shorts/GEdgUWHHGo4",
+   "facebook": "https://www.facebook.com/reel/1602231034992389",
+   "instagram": "https://www.instagram.com/reel/DgFOcSOkRmD/"
+  }
  },
  {
   "app": "Draft Survey",
