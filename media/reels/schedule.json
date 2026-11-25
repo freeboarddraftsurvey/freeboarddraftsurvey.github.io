@@ -39,8 +39,13 @@
   "file": "media/reels/PortToPort_Reel_Tip02.mp4",
   "raw": "https://raw.githubusercontent.com/freeboarddraftsurvey/freeboarddraftsurvey.github.io/main/media/reels/PortToPort_Reel_Tip02.mp4",
   "caption": "🧭 Port to Port | Tip 2: Weather and storms on your route\n\nFree passage planning app on your phone, made by a ship master ⚓\nFull tutorial 2 on our YouTube · App: freeboarddraftsurvey.github.io/porttoport.html\n\n#seafarer #maritime #shipmaster #pinoyseaman #weatherrouting #typhoon #freeboard",
-  "posted": false,
-  "app": "Port to Port"
+  "posted": true,
+  "app": "Port to Port",
+  "links": {
+   "youtube": "https://youtube.com/shorts/1R4NU3S6rEg",
+   "facebook": "https://www.facebook.com/reel/1170269652136682",
+   "instagram": "https://www.instagram.com/reel/DgKYB2-y6ZQ/"
+  }
  },
  {
   "app": "Draft Survey",
